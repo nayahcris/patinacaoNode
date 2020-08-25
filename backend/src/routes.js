@@ -14,5 +14,7 @@ routes.delete('/patinadores/:id', patinadorController.delete);
 
 routes.post('/jurados', juradoController.create);
 routes.get('/jurados', juradoController.index);
+routes.delete('/jurados/:id', juradoController.delete);
+routes.put('/jurados/:id', juradoController.update);
 
 module.exports  = routes;

@@ -5,9 +5,9 @@ exports.up = function(knex) {
         table.string('nome').notNullable();
         table.string('paisDeOrigem').notNullable();
         table.decimal('notaPatinador').notNullable();
-        table.string('patinador').notNullable();
+        table.decimal('id_patinador').notNullable();
 
-        table.foreign('patinador').references('id').inTable('patinadores');
+        table.foreign('id_patinador').references('id').inTable('patinadores');
       });
 };
 
