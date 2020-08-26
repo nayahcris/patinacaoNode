@@ -17,4 +17,4 @@ routes.get('/jurados', juradoController.index);
 routes.delete('/jurados/:id', juradoController.delete);
 routes.put('/jurados/:id', juradoController.update);
 
-module.exports  = routes;
+module.exports  = routes
