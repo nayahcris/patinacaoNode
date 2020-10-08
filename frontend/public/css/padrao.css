@@ -1,0 +1,162 @@
+/* Parte destinada às páginas em geral
+	-> Plano de fundo
+	->Tamanho do html e body
+*/
+
+html, body { 
+	height: 100%; 
+	width: 100%; 
+	margin: 0; 
+}
+
+#bg {
+	position: fixed;
+	width: 100%;
+   	height: 100%;
+   	top: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -2;
+}
+
+/* Fim da parte geral*/
+
+/* Parte destinada ao cabecalho, especificamente a barra superior
+*/
+
+header nav {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header nav a {
+	font-size: 19px;
+	font-weight: 500;
+}
+
+#logo {
+	width: 5%;
+	margin-left: 2%;
+}
+
+#logo img {
+	width: 100%;
+}
+
+.account img {
+	margin-right: 5px;
+}
+
+/*Fim da parte do cabecalho, barra superior*/
+
+/*	Parte Wraper
+	Por padrao o amrgin top é 110px, caso diminua
+	a resolução ele se adapta para 58px, conforme
+	o arquivo mobile.css
+*/
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	margin-top: 110px;
+}
+
+/* Fim da parte Wrapper */
+
+/* Padroes de titulo e subtitulo */
+
+.titulo {
+	font-weight: 600;
+	margin-left: 1.5%;
+	font-size: 160%;
+	line-height: 150%;
+	text-shadow: 2px 2px 2px rgba(206,89,55,0);
+	color: #fff;
+}
+
+.subtitulo {
+	margin-left: 1.5%;
+	font-size: 120%;
+	line-height: 100%;
+	text-shadow: 2px 2px 2px rgba(206,89,55,0);
+	color: #fff;
+}
+
+/* Fim padroes de titulo e subtitulo */
+
+/* Inicio da pagina: player */
+
+.painel-dark video {
+	width: 81%;
+}
+
+.player header {
+	padding-top: 2%;
+	padding-bottom: 0.5%;
+	padding-left: 3.8%;
+	margin-bottom: 1%;
+	color: #fff;
+}
+
+.player header h1 {
+	font-weight: 600;
+}
+
+.infos {
+	padding-top: 3%;
+	padding-bottom: 0.5%;
+	padding-left: 9%;
+	padding-right: 9%;
+}
+
+.infos p {
+	text-align: center;
+}
+
+.infos h2, .infos p, .temporadas h1 {
+	color: #FFF;
+}
+
+.infos h2 {
+	margin-bottom: 3%;
+	text-align: center;
+	font-weight: 600;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.painel-dark {
+	background-color: #000;
+	padding-top: 15px;
+}
+
+.painel-player {
+	background-color: #744FC6;
+}
+
+.cabecalho-player  {
+	padding-top: 1% !important;
+	padding-bottom: 0 !important; 
+	margin-bottom: 0 !important;
+}
+
+.cabecalho-player figure {
+	margin-top: 10px;
+	width: 12%;
+	height: 12%;
+}
+
+.cabecalho-player figure img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.cabecalho-info {
+	margin-left: 2%;
+} 
+
+/* Fim da pagina: player */
+
+
