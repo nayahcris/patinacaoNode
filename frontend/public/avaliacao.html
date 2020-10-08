@@ -43,11 +43,11 @@
 				<div id="opcoes" class="collapse navbar-collapse ">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item m-lg-4">
-							<a class="nav-link" href="#">Inicio</a>
+							<a class="nav-link" href="index.html">Inicio</a>
 						</li>
 
 						<li class="nav-item m-lg-4"> 
-							<a class="nav-link" href="avaliacao.html">Avaliação</a>
+							<a class="nav-link" href="#">Avaliação</a>
 						</li>
 
 						<li class="nav-item m-lg-4">
@@ -57,35 +57,49 @@
 				</div>
 			</nav>
     </header>
-
-    <img id="bg" src="img/background.jpg">
     
-    <div id="wrapper">		
-      <section class="painel-1">
-      <div class="painel-player">
-        <header class="cabecalho-player justify-content-left align-items-center">
-        
-          <div class="cabecalho-info">
-            <h4></h4>
-            <h1></h1>
-          </div>
-        </header>
+    <img id="bg" src="img/background.jpg">
 
-        <div align="center" class="painel-dark pb-2">
-          <video id="video-p" controls>
-              <source id="source-video" src="movie/ice_movie.mp4" type="video/mp4">
-          </video> 
-        </div>
-      </div>
+    <div id="wrapper">
+			<section class="painel-1 contato pt-6">
+				<h1 class="pt-5">Avaliação</h1>
+				<p class="pt-3">Preencha todos os campos abaixo, em seguida, clique em avaliar!</p>
 
-      <div class="painel-player">
-        <section class="player infos">
-          <h2>Patinação no Gelo</h2>
-          <p class="pt-4 pb-4">
-            A patinação no gelo é um bom divertimento, mas também é um esporte de competição. 
-            Os patinadores deslizam pelo gelo usando patins especiais – calçados com uma lâmina de metal afixada no solado.
-          </p>
-      </div>
-  </div>
+				<form class="container pt-1 pb-5" action="" method="post">
+					<fieldset class="pb-5">
+							<div class="form-group pt-3">
+								<label for="nome">Nome do Jurado: </label>
+								<input type="text" id="nome" name="nome" class="form-control" placeholder="Ex: Nayara Cristina" required/>
+							</div>
+								
+							<div class="form-group pt-3">
+								<label for="pais">País de Origem: </label>
+								<input type="text" class="form-control" placeholder="Ex: China" required/> 
+							</div>
+
+							<div class="form-group pt-3">
+								<label for="email">Patinador(a): </label>
+								<select class="form-control" id="patinador">
+                  <option>Leandro Duarte</option>
+                  <option>Giovana Oliveira</option>
+                  <option>Ricardo Emerson</option>
+                  <option>Roberto Meire</option>
+                  <option>Jean Costa</option>
+                </select>
+              </div>
+              
+              <div class="form-group pt-3">
+								<label for="nota">Avaliado(a): </label>
+								<input type="number" min="0" max="10" step="1" class="form-control" placeholder="Ex: 10.0" required/> 
+              </div>
+              
+							<input type="submit" class="btn btn-danger btn-block p5 pt-2 pb-2" name="avaliar" value="Avaliar"> 
+              <input type="reset" class="btn btn-light btn-block p5 pt-2 pb-2" value="Limpar Campos"> 
+              
+              <br/>
+					</fieldset>
+				</form>
+      </section>
+		</div>
   </body>
 </html>

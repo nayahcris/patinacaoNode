@@ -83,6 +83,16 @@ header nav a {
 
 /* Fim padroes de titulo e subtitulo */
 
+
+.painel-1 {
+	background-color: rgba(200, 200, 200, 0.3);
+}
+
+.painel-1 h1 {
+	font-weight: bold;
+}
+
+
 /* Inicio da pagina: player */
 
 .painel-dark video {
@@ -159,4 +169,12 @@ header nav a {
 
 /* Fim da pagina: player */
 
+/* Inicio da pagina: contato */
+
+.contato h1, p, label {
+	color: #fff;
+	text-align: center;
+}
+
+/* Fim da pagina: contato*/
 
