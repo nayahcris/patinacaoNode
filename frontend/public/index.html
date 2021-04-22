@@ -1,91 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8" />
-    <title>Patinação no Gelo</title>
-
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link rel="icon" href="img/play.png">
-
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/padrao.css">
-		<link rel='stylesheet' href='maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'/>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/mobile.css">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-
+    <link rel="icon" href="%PUBLIC_URL%/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
     <meta
-      name="Patinação no Gelo"
+      name="Patinação Artística"
       content="Web site created using create-react-app"
-    />	    
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+    <link rel="stylesheet" type="text/css" href="../src/estilos.css">
+    <title>Patinação Artística</title>
   </head>
 
   <body>
-    <header>
-			<nav id="barraNavegacao" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-				<a id="logo" class="navbar-brand" href="index.html">
-          <h2>Patinação no Gelo
-            <img src="img/logo.png"  alt="Logo da Patinação no Gelo"/>
-          </h2>
-				</a>
-				
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opcoes" aria-controls="opcoes" aria-expanded="false" aria-label="Toggle navigation">
-	    			<span class="navbar-toggler-icon"></span>
-	  			</button>
-
-				<div id="opcoes" class="collapse navbar-collapse ">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item m-lg-4">
-							<a class="nav-link" href="#">Inicio</a>
-						</li>
-
-						<li class="nav-item m-lg-4"> 
-							<a class="nav-link" href="avaliacao.html">Avaliação</a>
-						</li>
-
-						<li class="nav-item m-lg-4">
-							<a class="nav-link" href="#">Consulta</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-    </header>
-
-    <img id="bg" src="img/background.jpg">
-    
-    <div id="wrapper">		
-      <section class="painel-1">
-      <div class="painel-player">
-        <header class="cabecalho-player justify-content-left align-items-center">
-        
-          <div class="cabecalho-info">
-            <h4></h4>
-            <h1></h1>
-          </div>
-        </header>
-
-        <div align="center" class="painel-dark pb-2">
-          <video id="video-p" controls>
-              <source id="source-video" src="movie/ice_movie.mp4" type="video/mp4">
-          </video> 
-        </div>
-      </div>
-
-      <div class="painel-player">
-        <section class="player infos">
-          <h2>Patinação no Gelo</h2>
-          <p class="pt-4 pb-4">
-            A patinação no gelo é um bom divertimento, mas também é um esporte de competição. 
-            Os patinadores deslizam pelo gelo usando patins especiais – calçados com uma lâmina de metal afixada no solado.
-          </p>
-      </div>
-  </div>
+    <div id="root"></div>
   </body>
 </html>
